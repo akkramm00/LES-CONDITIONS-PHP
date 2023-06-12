@@ -169,6 +169,49 @@ switch($day) {
   echo "nous ne connaissons pas le jour d'aujourd'hui !";
 }
 
+echo "<br>";
+
+
+// EXERCICE ++======>  DEPART A LA RETRAITE /
+$retraire = 59 ;
+if($retraire >= 65) {
+  echo "Félicitation patron ,vous pouvez partir à la retraite dès aujourd'hui !";
+  }else if($retraire === 64) {
+    echo "Vous pôuvez prendre la retraite ca la fin de ctette année si vous voulez!";
+  } else if( $retraire <64 && $retraire >= 60) {
+  echo "vous vous approchez tranquillement à la retraite mais ,on  bosse pour le moment!";
+  }else {
+    echo "vous etes encore trop loin de la retraite";
+  }
+echo "<br>";
+// avec la strucure "switch" :
+$retraire = 70;
+switch($retraire) {
+  case ($retraire >= 65) :
+    echo "Félicitation patron ,vous pouvez partir à la retraite dès aujourd'hui !";
+    break;
+  case ($retraire === 64):
+    echo "Vous pôuvez prendre la retraite ca la fin de ctette année si vous voulez!";
+    break;
+  case ( $retraire <64 && $retraire >= 60):
+    echo "vous vous approchez tranquillement à la retraite mais ,on  bosse pour le moment!";
+    break;
+  default :
+    echo "vous etes encore trop loin de la retraite";
+}
+echo "<br>";
+// Avec la structure Match :
+
+$retraire = 65;
+echo match($retraire){
+($retraire >= 65) => "Félicitation patron ,vous pouvez partir à la retraite dès aujourd'hui !",
+($retraire === 64) => "Vous pôuvez prendre la retraite ca la fin de ctette année si vous voulez!",
+($retraire <64 && $retraire >= 60) => "vous vous approchez tranquillement à la retraite mais ,on  bosse pour le moment!",
+default => "vous etes encore trop loin de la retraite",
+}
+
+
+
 ?> 
 
 
