@@ -34,7 +34,36 @@ if($age>= 18){
 }else {
   echo "il est encore bébé";
 }
+echo "<br>";
 
+// la structure switch :
+$etudes = "sports";
+
+switch ($etudes){
+  case 'psychologie' :
+  echo "Vous avez fait des etdes de psychologie";
+  break;
+  case 'philosophie' :
+  echo "Vous avez fait des etdes de philosophie";
+  break;
+  case 'sports' :
+  echo "Vous avez fait des etdes de sports";
+  break;
+  case 'medecines' :
+  echo "Vous avez fait des etdes de medecines";
+  break;
+  case 'scientifiques' :
+  echo "Vous avez fait des etudes de sciences";
+  break;
+  case 'litératures' :
+  echo "vous avez fait des etudes de litératures";
+  break;
+  case 'Biologie':
+  echo "Vous avez fait des etudes de biologie";
+  break;
+  default :
+  echo "vous n'avez pas été loin dans vos études!";
+}
 
 ?> 
 
